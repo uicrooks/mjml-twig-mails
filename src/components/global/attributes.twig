@@ -1,0 +1,52 @@
+{#
+ # global overwrites/adjustments
+ # https://mjml.io/documentation/#standard-body-components
+ #}
+
+{#
+ # basic
+ # you can use mj-all to set default attributes for every components inside your document
+ #}
+<mj-all
+  font-family="'Open Sans'"
+  padding="0"
+/>
+<mj-body
+  css-class="container"
+  width="{{ style['max-width'] }}"
+/>
+
+{# layout #}
+<mj-wrapper />
+<mj-section />
+<mj-column />
+<mj-raw />
+<mj-group />
+<mj-divider
+  border-width="1px"
+  border-color="{{ style.color.grey }}"
+/>
+<mj-spacer />
+
+{# content #}
+<mj-text
+  line-height="1.5"
+/>
+<mj-image />
+<mj-button />
+<mj-table />
+
+{# components #}
+<mj-hero />
+<mj-navbar />
+<mj-navbar-link />
+<mj-social />
+<mj-carousel />
+<mj-accordion />
+
+{#
+ # custom mj-classes
+ # reference them like this: <mj-text mj-class="my-class"></mj-text>
+ #}
+<mj-class name="bg-primary" background-color="{{ style.color.primary }}" />
+<mj-class name="bg-secondary" background-color="{{ style.color.secondary }}" />

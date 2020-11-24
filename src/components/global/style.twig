@@ -1,0 +1,39 @@
+{#
+ # you can write regular css here
+ # .my-class { color: red }
+ # reference it like this: <mj-text css-class="my-class"></mj-text>
+ #}
+
+{#
+ # container
+ #}
+.container {
+  padding: 0 10px;
+  margin: 0px auto;
+  max-width: 650px;
+  background: {{ style.color.white }};
+}
+
+@media (min-width: {{ style.breakpoint.mobile }}) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+{# link #}
+a {
+  color: {{ style.color.primary }};
+  text-decoration: none;
+}
+
+{# make link inside button full width #}
+.action.action--primary a {
+  display: block !important;
+}
+
+{#
+ # typography
+ #}
+p {
+  margin: 0;
+}

@@ -1,0 +1,9 @@
+style:
+  google-fonts: https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap
+  breakpoint:
+    mobile: 400px
+  max-width: 650px
+  color:
+    primary: '#5018E8'
+    secondary: '#E2E2E2'
+    grey: '#e1e1e1'

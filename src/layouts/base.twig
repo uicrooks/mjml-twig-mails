@@ -1,0 +1,60 @@
+<mjml lang="{% block language %}en{% endblock %}">
+  {% block head %}
+    <mj-head>
+      {# set the title of the document. #}
+      <mj-title>
+        {% block title %}
+          {{ title }}
+        {% endblock %}
+      </mj-title>
+
+      {# set the preview that will be displayed in the inbox of the recipient. #}
+      <mj-preview>
+        {% block preview %}
+          {{ preview }}
+
+          {% if production %}
+            {# preview hack #}
+            {% for i in (1..200) %}&zwnj;&nbsp;{% endfor %}
+          {% endif %}
+        {% endblock %}
+      </mj-preview>
+
+      {#  control on which breakpoint the layout should go desktop/mobile. #}
+      <mj-breakpoint width="{% block breakpoint %}{{ style.breakpoint.mobile }}{% endblock %}" />
+
+      {#  import fonts #}
+      {% block font %}
+        <mj-font name="Open Sans" href="{{ style['google-fonts'] }}" />
+      {% endblock %}
+
+      {# modify default attributes on a mj-tag and add mj-classes. #}
+      <mj-attributes>
+        {% block attributes %}
+          {% include '@components::global/attributes.twig' %}
+        {% endblock %}
+      </mj-attributes>
+
+      {# set CSS styles that will be applied to the HTML in your MJML document. #}
+      <mj-style>
+        {% block style %}
+          {% include '@components::global/style.twig' %}
+        {% endblock %}
+      </mj-style>
+    </mj-head>
+  {% endblock %}
+
+  {% block body %}
+    <mj-body>
+      {% block header %}
+        {% include '@components::global/header.twig' %}
+      {% endblock %}
+
+      {% block content %}{% endblock %}
+
+      {% block footer %}
+        {% include '@components::global/footer.twig' %}
+      {% endblock %}
+    </mj-body>
+  {% endblock body %}
+</mjml>
