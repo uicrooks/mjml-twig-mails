@@ -57,6 +57,19 @@ $ npm run build
 ```
 <!-- production (end) -->
 
+<!-- directories (start) -->
+## Directories
+| Directory | Description |
+| --- | --- |
+| .config | contains webpack configs |
+| src | contains webpacks main entry point `main.js` which auto-loads all `.twig` files inside `src/templates` |
+| src/assets | contains images |
+| src/components | contains defined components |
+| src/data | contains `.yaml` files. The contents are accessible in all `.twig` files |
+| src/layouts | contains layouts |
+| src/templates | contains mail templates |
+<!-- directories (end) -->
+
 <!-- documentation (start) -->
 ## Documentation
 - [MJML docs](https://documentation.mjml.io/)
