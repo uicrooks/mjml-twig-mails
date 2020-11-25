@@ -20,15 +20,6 @@
 Blazing fast mail templating environtment with ✉ MJML + 🌿 Twig. Create responsive emails quickly with less code.
 <!-- title / description (end) -->
 
-<!-- toc (start) -->
-## Table of contents
-- [Features](#features)
-- [System requirements](#system-requirements)
-- [Getting started](#getting-started)
-- [Documentation](#documentation)
-- [License](#license)
-<!-- toc (end) -->
-
 <!-- features (start) -->
 ## Features
 - MJML
