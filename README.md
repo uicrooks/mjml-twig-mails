@@ -67,7 +67,7 @@ $ npm run build
 | src/components | contains defined components |
 | src/data | contains `.yaml` files. The contents are accessible in all `.twig` files |
 | src/layouts | contains layouts |
-| src/templates | contains mail templates |
+| src/templates | contains mail templates. A newly created template can be accessed in the browser by typing `/template-name` after the dev-server-url. For exmaple: `http://localhost:8080/template-name` |
 <!-- directories (end) -->
 
 <!-- documentation (start) -->
