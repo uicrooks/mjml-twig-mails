@@ -46,6 +46,8 @@ $ npm install
 ```shell
 $ npm run dev
 ```
+
+If the server port is already in use adjust `devServerPort` in `package.json`
 <!-- getting started (end) -->
 
 <!-- production (start) -->
@@ -61,13 +63,13 @@ $ npm run build
 ## Directories
 | Directory | Description |
 | --- | --- |
-| .config | contains webpack configs |
-| src | contains webpacks main entry point `main.js` which auto-loads all `.twig` files inside `src/templates` |
-| src/assets | contains images |
-| src/components | contains defined components |
-| src/data | contains `.yaml` files. The contents are accessible in all `.twig` files |
-| src/layouts | contains layouts |
-| src/templates | contains mail templates. A newly created template can be accessed in the browser by typing `/template-name` after the dev-server-url. For exmaple: `http://localhost:8080/template-name` |
+| .config | Contains webpack configs. |
+| src | Contains webpacks main entry point `main.js` which auto-loads all `.twig` files inside `src/templates`. |
+| src/assets | Contains images. |
+| src/components | Contains defined components. |
+| src/data | Contains `.yaml` files. The contents are accessible in all `.twig` files. |
+| src/layouts | Contains layouts. |
+| src/templates | Contains mail templates. A newly created template can be accessed in the browser by typing `/template-name` after the dev-server-url. Exmaple: `http://localhost:8080/template-name`. |
 <!-- directories (end) -->
 
 <!-- documentation (start) -->
