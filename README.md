@@ -26,7 +26,7 @@ Blazing fast mail templating environtment with ✉ MJML + 🌿 Twig. Create resp
 - Twig
 - Yaml
 - Webpack
-- Live reload
+- Webpack-dev-server
 <!-- features (end) -->
 
 <!-- system requirements (start) -->
