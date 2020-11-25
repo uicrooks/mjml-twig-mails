@@ -4,14 +4,14 @@
       {# set the title of the document. #}
       <mj-title>
         {% block title %}
-          {{ title }}
+          {{ title | default('Title') }}
         {% endblock %}
       </mj-title>
 
       {# set the preview that will be displayed in the inbox of the recipient. #}
       <mj-preview>
         {% block preview %}
-          {{ preview }}
+          {{ preview | default('Preview') }}
 
           {% if production %}
             {# preview hack #}

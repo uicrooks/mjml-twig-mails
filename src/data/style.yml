@@ -4,6 +4,8 @@ style:
     mobile: 400px
   max-width: 650px
   color:
-    primary: '#5018E8'
-    secondary: '#E2E2E2'
+    primary: '#5018e8'
+    secondary: '#e2e2e2'
+    grey-dark: '#c4c4c4'
     grey: '#e1e1e1'
+    grey-light: '#f5f5f5'

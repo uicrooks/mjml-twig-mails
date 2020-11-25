@@ -3,8 +3,9 @@
     <mj-text
       font-size="20px"
       color="#fff"
+      align="center"
     >
-      mjml-mails
+      mjml-twig-mails
     </mj-text>
   </mj-column>
 </mj-section>
@@ -17,7 +18,9 @@
       ico-color="#000"
     >
       {% for element in data.nav %}
-        <mj-navbar-link href="{{ element.url }}">{{ element.name }}</mj-navbar-link>
+        <mj-navbar-link href="{{ element.url }}">
+          {{ element.name }}
+        </mj-navbar-link>
       {% endfor %}
     </mj-navbar>
   </mj-column>

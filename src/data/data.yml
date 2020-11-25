@@ -13,12 +13,12 @@ data:
     -
       name: 'facebook'
       url: 'https://facebook.com'
-      icon: 'https://img.icons8.com/ffffff/material/facebook'
+      icon: 'https://img.icons8.com/4f4f4f/material/facebook'
     -
       name: 'instagram'
       url: 'https://instagram.com'
-      icon: 'https://img.icons8.com/ffffff/material/instagram'
+      icon: 'https://img.icons8.com/4f4f4f/material/instagram'
     -
       name: 'twitter'
       url: 'https://twitter.com'
-      icon: 'https://img.icons8.com/ffffff/material/twitter'
+      icon: 'https://img.icons8.com/4f4f4f/material/twitter'

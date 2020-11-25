@@ -24,12 +24,13 @@
 <mj-group />
 <mj-divider
   border-width="1px"
-  border-color="{{ style.color.grey }}"
+  border-color="{{ style.color['grey-dark'] }}"
 />
 <mj-spacer />
 
 {# content #}
 <mj-text
+  font-size="14px"
   line-height="1.5"
 />
 <mj-image />
@@ -39,8 +40,13 @@
 {# components #}
 <mj-hero />
 <mj-navbar />
-<mj-navbar-link />
-<mj-social />
+<mj-navbar-link
+  font-size="14px"
+  padding="10px"
+/>
+<mj-social
+  text-padding="5px"
+/>
 <mj-carousel />
 <mj-accordion />
 
