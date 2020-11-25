@@ -1,6 +1,6 @@
 {
   "name": "mjml-twig-mails",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:uicrooks/mjml-twig-mails.git",
   "author": "Sergej Samsonenko <contact@sergej.codes>",
