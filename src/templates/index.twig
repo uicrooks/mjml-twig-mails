@@ -1,25 +1,36 @@
 {% extends '@layouts::base.twig' %}
 
-{# title - start #}
-{% block title %}
-  Title
-{% endblock %}
-{# title - end #}
+{#
+ # this a navigation template
+ # navigate to any other template from here
+ #}
 
-{# preview - start #}
-{% block preview %}
-  Inbox preview text
-{% endblock %}
-{# preview - end #}
+{% block header %}{% endblock %}
+{% block footer %}{% endblock %}
 
 {# content - start #}
 {% block content %}
-  {% include '@components::local/hero.twig' %}
-
-  <mj-section padding="30px" background-color="{{ style.color['grey-light'] }}">
+  <mj-section padding="30px">
     <mj-column>
       <mj-text>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quam repudiandae, temporibus perferendis voluptas eos consequatur possimus ea. Placeat pariatur quisquam ea amet rerum enim itaque id asperiores sapiente a commodi praesentium fugit quibusdam ipsam sint, porro sunt deserunt repellendus architecto fuga dicta voluptatem odio quod distinctio! Sequi, fugiat voluptatibus!
+        <div style="background: #f5f5f5; border-radius: 8px; padding: 20px;">
+          <h1 style="font-size: 20px; color: #242424; border-bottom: 1px solid #e3e3e3; padding-bottom: 10px; margin: 0 0 10px;">
+            Templates
+          </h1>
+
+          {% for template in templates %}
+            {% if template != 'index' %}
+              <div>
+                <a
+                  href="/{{ template }}"
+                  style="display: inline-block; font-size: 18px; padding: 5px;"
+                >
+                  {{ template }}
+                </a>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
       </mj-text>
     </mj-column>
   </mj-section>

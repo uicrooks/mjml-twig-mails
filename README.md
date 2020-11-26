@@ -8,12 +8,6 @@
 </p>
 <!-- logo (end) -->
 
-<!-- badges (start) -->
-<p align="center">
-  <img src="https://img.shields.io/github/license/uicrooks/mjml-twig-mails">
-</p>
-<!-- badges (end) -->
-
 <!-- title / description (start) -->
 <h2 align="center">MJML-Twig Mails</h2>
 
@@ -87,12 +81,12 @@ $ yarn build
 | Directory | Description |
 | --- | --- |
 | .config | Contains webpack configs. |
-| src | Contains webpacks main entry point `main.js` which auto-loads all `.twig` files inside `src/templates`. |
+| src | Contains webpack's main entry point `main.js` which auto-loads all `.twig` files inside `src/templates/` and all it's subdirectories. |
 | src/assets | Contains images. |
 | src/components | Contains defined components. |
 | src/data | Contains `.yml` files. The contents are accessible in all `.twig` files. |
 | src/layouts | Contains layouts. |
-| src/templates | Contains mail templates. A newly created template can be accessed in the browser by typing `/template-name` after the dev-server-url. Exmaple: `http://localhost:8080/template-name`. |
+| src/templates | Contains mail templates. A newly created template can be accessed in the browser by typing `/template-name` after the dev-server-url. Exmaple: `http://localhost:8080/template-name`. The `index.twig` template is reserved for navigation. |
 <!-- directories (end) -->
 
 <!-- documentation (start) -->
@@ -100,10 +94,3 @@ $ yarn build
 - [MJML docs](https://documentation.mjml.io/)
 - [Twig docs](https://twig.symfony.com/doc/2.x/)
 <!-- documentation (end) -->
-
-<!-- license (start) -->
-## License
-[MIT](https://opensource.org/licenses/MIT)
-
-Copyright (c) 2020-present, Sergej Samsonenko
-<!-- license (end) -->

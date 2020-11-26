@@ -1,0 +1,27 @@
+{% extends '@layouts::base.twig' %}
+
+{# title - start #}
+{% block title %}
+  Title
+{% endblock %}
+{# title - end #}
+
+{# preview - start #}
+{% block preview %}
+  Inbox preview text
+{% endblock %}
+{# preview - end #}
+
+{# content - start #}
+{% block content %}
+  {% include '@components::local/hero.twig' %}
+
+  <mj-section padding="30px" background-color="{{ style.color['grey-light'] }}">
+    <mj-column>
+      <mj-text>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque quam repudiandae, temporibus perferendis voluptas eos consequatur possimus ea. Placeat pariatur quisquam ea amet rerum enim itaque id asperiores sapiente a commodi praesentium fugit quibusdam ipsam sint, porro sunt deserunt repellendus architecto fuga dicta voluptatem odio quod distinctio! Sequi, fugiat voluptatibus!
+      </mj-text>
+    </mj-column>
+  </mj-section>
+{% endblock %}
+{# content - end #}
