@@ -38,6 +38,7 @@ module.exports = merge(common, {
     }
   },
   plugins: [
+    // remove plugin if assets directory is empty
     new CopyPlugin({
       patterns: [
         {
