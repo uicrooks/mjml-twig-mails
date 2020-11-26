@@ -73,13 +73,23 @@ module.exports = {
               },
               data: (context) => {
                 let data = {
-                  server: server,
+                  server: server, // absolute path to localhost address
                   env: process.env.NODE_ENV,
                   development: process.env.NODE_ENV === 'development',
-                  production: process.env.NODE_ENV === 'production'
+                  production: process.env.NODE_ENV === 'production',
+                  templates: null
                 }
 
-                requireContext(path.resolve(__dirname, '../src/data'), false, /\.ya?ml$/)
+                // force webpack to watch folder
+                context.addContextDependency(path.resolve(__dirname, '../src/templates'))
+
+                // get all templates
+                data.templates = requireContext(path.resolve(__dirname, '../src/templates'), true, /\.twig$/)
+                  .keys()
+                  .map(template => template.replace('.twig', ''))
+
+                // get all yml data
+                requireContext(path.resolve(__dirname, '../src/data'), true, /\.ya?ml$/)
                   .keys()
                   .forEach(file => {
                     // force webpack to watch files

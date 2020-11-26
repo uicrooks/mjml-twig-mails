@@ -26,8 +26,9 @@ module.exports = merge(common, {
     liveReload: true,
     stats: 'minimal',
     overlay: true,
-    contentBase: path.resolve(__dirname, '../dist'),
-    contentBasePublicPath: path.resolve(__dirname, '../dist'),
+    contentBase: '/',
+    contentBasePublicPath: '/',
+    publicPath: '/',
     historyApiFallback: {
       rewrites: [
         {
