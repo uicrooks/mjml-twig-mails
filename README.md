@@ -11,7 +11,7 @@
 <!-- title / description (start) -->
 <h2 align="center">MJML-Twig Mails</h2>
 
-Blazing fast mail templating environtment with ✉ MJML + 🌿 Twig. Create responsive emails quickly with less code.
+Blazing fast mail templating environment with ✉ MJML + 🌿 Twig. Create responsive emails quickly with less code.
 <!-- title / description (end) -->
 
 <!-- features (start) -->
