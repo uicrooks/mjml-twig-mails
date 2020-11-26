@@ -1,5 +1,5 @@
 const path = require('path')
-const ProgressBarPlugin = require('progress-bar-webpack-plugin')
+const ProgressPlugin = require('progress-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const yaml = require('js-yaml')
 const requireContext = require('require-context')
@@ -98,7 +98,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new ProgressBarPlugin(),
+    new ProgressPlugin(),
     new CleanWebpackPlugin()
   ]
 }
