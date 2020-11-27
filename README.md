@@ -31,7 +31,7 @@ Blazing fast mail templating environment with ✉ MJML + 🌿 Twig. Create respo
 
 <!-- getting started (start) -->
 ## Getting started
-Install dependencies and run webpack-dev-server
+Install dependencies and run webpack-dev-server:
 
 ### npm
 
@@ -61,7 +61,7 @@ If the server port is already in use, adjust `devServerPort` in `package.json`
 
 <!-- production (start) -->
 ## Production
-Generate minified `.html` files and copy `assets/` directory to `dist/`
+Generate minified `.html` files and copy `assets/` directory to `dist/`:
 
 ### npm
 
@@ -81,9 +81,9 @@ $ yarn build
 | Directory | Description |
 | --- | --- |
 | .config | Contains webpack configs. |
-| src | Contains webpack's main entry point `main.js` which auto-loads all `.twig` files inside `src/templates/` and all it's subdirectories. |
+| src | Contains webpack's main entry point `main.js` which auto-loads all `.twig` files inside `src/templates/` and all subdirectories. |
 | src/assets | Contains images. |
-| src/components | Contains defined components. |
+| src/components | Contains reusable components. |
 | src/data | Contains `.yml` files. The contents are accessible in all `.twig` files. |
 | src/layouts | Contains layouts. |
 | src/templates | Contains mail templates. A newly created template can be accessed in the browser by typing `/template-name` after the dev-server-url. Exmaple: `http://localhost:8080/template-name`. The `index.twig` template is reserved for navigation. |
